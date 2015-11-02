@@ -1,0 +1,12 @@
+vendor/
+nbproject/
+/*.buildpath
+/*.project
+/.settings
+/error.log
+/export/nicejson
+.idea/
+/coverage
+/phpunit.phar
+/composer.phar
+/composer.lock

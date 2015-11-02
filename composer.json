@@ -1,0 +1,45 @@
+{
+  "name": "jimmlog/yii2-disposable-email-validator",
+  "description": "Yii2 disposable email validator",
+  "version": "1.0.0",
+  "keywords": [
+    "yii2 disposable email validator",
+    "yii2 email validator",
+    "yii2 validator",
+    "disposable validator",
+    "yii2",
+    "email",
+    "validator"
+  ],
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "type": "library",
+  "homepage": "https://github.com/jimmlog/yii2-disposable-email-validator/",
+  "authors": [
+    {
+      "name": "Jimm Logan",
+      "email": "jimmloga@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/jimmlog/yii2-disposable-email-validator/issues?state=open",
+    "source": "https://github.com/jimmlog/yii2-disposable-email-validator/"
+  },
+  "require": {
+    "php": ">=5.4.0",
+    "ext-json": "*",
+    "yiisoft/yii2": "@dev",
+    "nojacko/email-data-disposable": "@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "jimmlog\\yii2\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}
