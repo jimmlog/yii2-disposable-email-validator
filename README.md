@@ -3,10 +3,7 @@ Disposable E-mail validator for Yii 2
 This library contains validator for block email from disposable domains
 with [Yii framework 2.0](http://www.yiiframework.com).
 
-[![Latest Stable Version](https://poser.pugx.org/jimmlog/yii2-disposable-email-validator/v/stable)](https://packagist.org/packages/jimmlog/yii2-disposable-email-validator) 
-[![Total Downloads](https://poser.pugx.org/jimmlog/yii2-disposable-email-validator/downloads)](https://packagist.org/packages/jimmlog/yii2-disposable-email-validator) 
-[![Latest Unstable Version](https://poser.pugx.org/jimmlog/yii2-disposable-email-validator/v/unstable)](https://packagist.org/packages/jimmlog/yii2-disposable-email-validator) 
-[![License](https://poser.pugx.org/jimmlog/yii2-disposable-email-validator/license)](https://packagist.org/packages/jimmlog/yii2-disposable-email-validator)
+[![Latest Stable Version](https://poser.pugx.org/jimmlog/yii2-disposable-email-validator/v/stable)](https://packagist.org/packages/jimmlog/yii2-disposable-email-validator) [![Total Downloads](https://poser.pugx.org/jimmlog/yii2-disposable-email-validator/downloads)](https://packagist.org/packages/jimmlog/yii2-disposable-email-validator) [![Latest Unstable Version](https://poser.pugx.org/jimmlog/yii2-disposable-email-validator/v/unstable)](https://packagist.org/packages/jimmlog/yii2-disposable-email-validator) [![License](https://poser.pugx.org/jimmlog/yii2-disposable-email-validator/license)](https://packagist.org/packages/jimmlog/yii2-disposable-email-validator)
 
 Installation
 ------------
