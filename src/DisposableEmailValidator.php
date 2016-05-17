@@ -57,7 +57,8 @@ class DisposableEmailValidator extends Validator
     {
         $valid = true;
         if (filter_var($value, FILTER_VALIDATE_EMAIL)) {
-            $domain = array_pop(explode('@', $value));
+            $email = explode('@', $value);
+            $domain = array_pop($email);
             if (!empty($domain)) {
                 $valid = !in_array($domain, $this->disposableDomains);
             }
