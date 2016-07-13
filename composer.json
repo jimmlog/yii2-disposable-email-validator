@@ -1,7 +1,7 @@
 {
   "name": "jimmlog/yii2-disposable-email-validator",
   "description": "Yii2 disposable email validator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "keywords": [
     "yii2 disposable email validator",
     "yii2 email validator",

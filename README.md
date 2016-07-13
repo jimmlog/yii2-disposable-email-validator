@@ -30,7 +30,20 @@ to the require section of your composer.json.
 How To Use
 ----------
 
-This validator is additional validator for Yii2 core "email" validator.
+* Configure the component in your configuration file (web.php). The parameter additionalDomains is optional.
+
+```php
+'components' => [
+    'disposableEmail' => [
+        'class' => 'jimmlog\yii2\DisposableEmail',
+        'additionalDomains' => [
+            'gmail.com' // for example
+        ],
+    ],
+    ...
+```
+
+* Add `DisposableEmailValidator` in your model, for example:
 Example of use:
 
 ```
@@ -45,6 +58,26 @@ Example of use:
         ...
             [['email'], 'email'],
             [['email'], \jimmlog\yii2\DisposableEmailValidator::className()],
+        ...
+        }
+    ...
+    }
+```
+
+Example with custom message:
+
+```
+    class FormModel extend \yii\base\Model
+    {
+    ...
+        /**
+         * @inheritdoc
+         */
+        public function rules()
+        {
+        ...
+            [['email'], 'email'],
+            [['email'], \jimmlog\yii2\DisposableEmailValidator::className(), 'message' => 'Please provide another email'],
         ...
         }
     ...
