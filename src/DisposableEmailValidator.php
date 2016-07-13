@@ -8,6 +8,7 @@
 
 namespace jimmlog\yii2;
 
+use Yii;
 use yii\validators\Validator;
 
 /**
@@ -44,6 +45,9 @@ class DisposableEmailValidator extends Validator
             'disposable.php';
         if (!empty($domainsSource) && file_exists($domainsSource) && is_readable($domainsSource)) {
             $this->disposableDomains = require_once $domainsSource;
+        }
+        if (!empty(Yii::$app->disposableEmail->additionalDomains)) {
+            $this->disposableDomains = array_merge($this->disposableDomains, Yii::$app->disposableEmail->additionalDomains);
         }
         if (!is_array($this->disposableDomains) || empty($this->disposableDomains)) {
             $this->disposableDomains = [];
